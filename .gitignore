@@ -1,0 +1,9 @@
+# Built-in Directories
+.vscode/
+.git/
+__pycache__/
+
+# Directories
+lib/__pycache__/
+lib/apify/__pycache__/
+lib/module/__pycache__/

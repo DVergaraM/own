@@ -1,6 +1,7 @@
 from math import factorial
 from os import system
-from lib.module.config import tokens, op, asciiText
+from lib.module.config import tokens
+from lib.module.builtIn import op, asciiText
 from colorama import Fore, Style
 
 
