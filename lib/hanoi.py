@@ -1,7 +1,7 @@
 from lib.module.switch import switch
 from os import system
-from lib.module.asciiConsole import asciiText
-from lib.module.osIdentifier import op
+from lib.module.config import tokens, op, asciiText
+
 from colorama import Fore, Style
 n = 0
 org = ''

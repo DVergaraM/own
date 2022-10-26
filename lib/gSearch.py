@@ -1,8 +1,8 @@
 from googlesearch import search as gsearch
 import os
-from lib.module.asciiConsole import asciiText
+from .module.config import tokens, op, asciiText
 from colorama import Fore, Style
-from lib.module.osIdentifier import op
+
 
 os.system(op.cls())
 

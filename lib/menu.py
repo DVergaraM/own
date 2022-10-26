@@ -1,8 +1,8 @@
 from os import system
 from lib.module.switch import switch
-from lib.module.asciiConsole import asciiText
+from lib.module.config import tokens, op, asciiText
 from colorama import Fore, Style, init
-from lib.module.osIdentifier import op
+
 import time
 
 def main():

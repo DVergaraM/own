@@ -1,7 +1,7 @@
 from os import system
-from lib.module.asciiConsole import asciiText
+from lib.module.config import tokens, op, asciiText
 from colorama import Fore, Style
-from lib.module.osIdentifier import op
+
 from pyshorteners import Shortener
 
 system(op.cls())

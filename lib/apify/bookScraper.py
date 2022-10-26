@@ -1,9 +1,7 @@
-from lib.apify.keys import key
+from lib.module.config import tokens, op, asciiText
 from apify_client import ApifyClient
 from os import system
-from lib.module.asciiConsole import asciiText
 from colorama import Fore, Style
-from lib.module.osIdentifier import op
 
 system(op.cls())
 def s(book:str) -> str:
@@ -13,7 +11,7 @@ def s(book:str) -> str:
 def search(book:str, type:str):
     bookJoin = '-'.join(book.split(" "))
     file = open(s(bookJoin), "a", encoding="UTF-8")    
-    client = ApifyClient(key.key)
+    client = ApifyClient(tokens.apifyKey)
 
     scraper = client.actor("perci/z-library-book-scraper").call( run_input = {
     "search": book,

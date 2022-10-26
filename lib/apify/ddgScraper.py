@@ -1,9 +1,9 @@
-from lib.apify.keys import key
+from lib.module.config import tokens
 from apify_client import ApifyClient
 from os import system
-from lib.module.asciiConsole import asciiText
+from lib.module.config import tokens, op, asciiText
 from colorama import Fore, Style
-from lib.module.osIdentifier import op
+
 
 system(op.cls())
 def s(query:str) -> str:
@@ -13,7 +13,7 @@ def s(query:str) -> str:
 def search(query:str):
     queryJoin = '-'.join(query.split(" "))
     file = open(s(queryJoin), "a", encoding="UTF-8")    
-    client = ApifyClient(key.key)
+    client = ApifyClient(tokens.apifyKey)
 
     scraper = client.actor("cyberfly/duckduckgo").call(run_input = {
      "SearchTerm": query 
