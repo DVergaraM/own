@@ -1,0 +1,8 @@
+pyqrcode
+pypng
+colorama
+pytube
+apify_client
+Pillow
+googlesearch-python
+pyshorteners
